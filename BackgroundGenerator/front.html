@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Background Generator</title>
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <div class="gradient-box"></div>
+
+            <div class="row options">
+                    
+                <div class="column direction">
+                    <p>Direction</p>
+                    <div class="select-box">
+                        <select>
+                            <option value="to top">top</option>
+                            <option value="to right top">right top</option>
+                            <option value="to left top">left top</option>
+                            <option value="to left">left</option>
+                            <option value="to right">right</option>
+                            <option value="to bottom">bottom</option>
+                            <option value="to right bottom">right bottom</option>
+                            <option value="to left bottom">left bottom</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="column palette">
+                    <p>Colour</p>
+                    <div class="colors">
+                        <input type="color" value="#abcce6">
+                        <input type="color" value="#f3aedc">
+                    </div>
+                </div>
+            </div>
+            <textarea class="row" disabled >background: linear-gradient(to left top, #abcce6, #f3aedc);</textarea> 
+            <div class="row buttons">
+                <button class="refresh">Change colours</button>
+                <button class="copy">Copy code</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
